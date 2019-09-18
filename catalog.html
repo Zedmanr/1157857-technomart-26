@@ -14,10 +14,10 @@
       <label for="search">Поиск:</label>
       <input id="search" type="search" name="search">
 
-      <p>Закладки:0</p>
-      <p>Корзина:10</p>
-      <a href="#">Оформить заказ</a>
+      <p>Закладки:<span class="counter">0</span></p>
+      <p>Корзина:<span class="counter">10</span></p>
 
+      <a href="#">Оформить заказ</a>
     </section>
 
     <section>
@@ -64,53 +64,82 @@
       <h1>перфораторы</h1>
     </section>
 
-    <section class="filters">
-      <fieldset>
-        <legend>Производители:</legend>
-        <ul>
-          <li>
-            <input type="checkbox" name="bosch" id="filter-bosch" checked>
-            <label for="filter-bosch">
-              bosch
-            </label>
-          </li>
-          <li>
-            <input type="checkbox" name="interskol" id="filter-interskol">
-            <label for="filter-interskol">
-              интерскол
-            </label>
-          </li>
-          <li>
-            <input type="checkbox" name="makita" id="filter-makita" checked>
-            <label for="filter-makita">
-              makita
-            </label>
-          </li>
-          <li>
-            <input type="checkbox" name="dewalt" id="filter-dewalt">
-            <label for="filter-dewalt">
-              dewalt
-            </label>
-          </li>
-          <li>
-            <input type="checkbox" name="hitachi" id="filter-hitachi">
-            <label for="filter-hitachi">
-              hitachi
-            </label>
-          </li>
-        </ul>
-      </fieldset>
+    <div class="sorting">
+      <h2>сортировка:</h2>
 
-      <fieldset>
-        <legend>питание</legend>
-        <input type="radio" id="notify-on" name="notify" value="on" checked>
-        <label for="notify-on">аккумуляторные</label>
-        <input type="radio" id="notify-off" name="notify" value="off">
-        <label for="notify-off">сетевые</label>
-      </fieldset>
+      <ul>
+        <li><a href="#">по цене</a></li>
+        <li><a href="#">по типу</a></li>
+        <li><a href="#">по функционалу</a></li>
+        <li><a href="get-up"></a></li>
+        <li><a href="get-down"></a></li>
+      </ul>
 
-      <button type="button">показать</button>
-    </section>
+    </div>
+
+
+    <form action="#" method="POST">
+      <section class="filters">
+        <h2>фильтр:</h2>
+
+        <p>цена:</p>
+        <div class="range"></div>
+        <div class="first-tumbler"></div>
+        <div class="second-tumbler"></div>
+
+        <div>
+          <input class="min-price" type="text" value="0">
+          <span>-</span>
+          <input class="max-price" type="text" value="30000">
+        </div>
+
+        <fieldset>
+          <legend>Производители:</legend>
+          <ul>
+            <li>
+              <input type="checkbox" name="bosch" id="filter-bosch" checked>
+              <label for="filter-bosch">
+                bosch
+              </label>
+            </li>
+            <li>
+              <input type="checkbox" name="interskol" id="filter-interskol">
+              <label for="filter-interskol">
+                интерскол
+              </label>
+            </li>
+            <li>
+              <input type="checkbox" name="makita" id="filter-makita" checked>
+              <label for="filter-makita">
+                makita
+              </label>
+            </li>
+            <li>
+              <input type="checkbox" name="dewalt" id="filter-dewalt">
+              <label for="filter-dewalt">
+                dewalt
+              </label>
+            </li>
+            <li>
+              <input type="checkbox" name="hitachi" id="filter-hitachi">
+              <label for="filter-hitachi">
+                hitachi
+              </label>
+            </li>
+          </ul>
+        </fieldset>
+
+        <fieldset>
+          <legend>питание</legend>
+          <input type="radio" id="notify-on" name="notify" value="on" checked>
+          <label for="notify-on">аккумуляторные</label>
+          <input type="radio" id="notify-off" name="notify" value="off">
+          <label for="notify-off">сетевые</label>
+        </fieldset>
+
+        <button type="submit">показать</button>
+      </section>
+    </form>
 
     <section class="catalog">
       <h2 class="visually-hidden">Список товаров</h2>
@@ -120,7 +149,7 @@
             <button type="button">купить</button>
             <button type="button">в закладки</button>
           </div>
-          
+
           <p class="catalog-item-image">
             <img src="img/BFG3000.jpg" alt="BFG 3000" width="218px" height="170px">
           </p>
