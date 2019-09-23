@@ -1,0 +1,393 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: "PT Sans Narrow", Arial, sans-serif;
+    font-size: 14px;
+    font-weight: 700;
+    color: #ffffff;
+    background-color: #ffffff;
+  }
+
+  a {
+    text-decoration: none;
+  }
+  .ferst-header {
+    background-color: #f3f7f8;
+  }
+
+  .main-header {
+    background-image: url("img/head.png");
+    background-position: top center;
+    background-repeat: no-repeat;
+    color: #ffffff;
+  }
+
+  h1 {
+    width: 109px;
+    height: 19px;
+  }
+
+  input[type=search] {
+    padding: 12px 0 12px 49px;
+    border: none;
+    font-family: Cuprum;
+    font-size: 17px;
+  }
+  label.search {
+    width: 41px;
+    height: 12px;
+    font-family: Cuprum;
+    font-size: 17px;
+  }
+
+  .basket .bookmark {
+    width: 100px;
+    padding: 12px 0 12px 50px;
+    font-size: 17px;
+    font-style: normal;
+    font-family: "Cuprum","Arial",sans-serif;
+    text-align: left;
+    color: #ffffff;
+  }
+
+  .basket-catalog {
+    width: 100px;
+    padding: 12px 0 12px 50px;
+    font-size: 17px;
+    font-style: normal;
+    font-family: "Cuprum","Arial",sans-serif;
+    text-align: left;
+    color: #ffffff;
+    background-color: #ee3643;  
+  }
+
+  .order {
+    background-color: #63a63e;
+    padding: 12px 22px 12px 20px;
+    line-height: 18px;
+    color: #ffffff;
+    font-family: Cuprum;
+    font-size: 17px;
+  }
+
+/* сначала хотел сделать так, но не сработало. В чем ошибка? 
+  .main-header:nth-child(5) {
+    background-color: #63a63e;
+  } 
+  */
+.main-header a {
+  width: 100px;
+  padding: 12px 0 12px 50px;
+  font-size: 17px;
+  line-height: 18px;
+  font-style: normal;
+  font-family: "Cuprum","Arial",sans-serif;
+  text-align: left;
+  color: #ffffff;
+}
+
+.description {
+  width: 196px;
+  height: 60px;
+  font-size: 16px;
+  line-height: 23px;
+  font-style: italic;
+  font-family: "Cuprum","Arial",sans-serif;
+  color: #ee3643;;
+}
+
+.contacts a{
+  width: 270px;
+  height: 45px;
+  border: 3px solid #ffffff;
+  color: #ee3643;
+  font-family: Cuprum;
+  font-size: 21px;
+}
+
+.contacts p {
+  width: 250px;
+  height: 13px;
+  color: #32425c;
+  font-family: Cuprum;
+  font-size: 14px;
+}
+
+.user-name a{
+  padding: 12px 65px 14px 46px;
+  color: #000000;
+  font-family: Cuprum;
+  font-size: 21px;
+  font-weight: 400;
+  line-height: 21px;
+  background-color: #ffffff;
+}
+
+.user-info a{
+  color: #32425c;
+  font-family: Cuprum;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 18px;
+  text-decoration: underline;
+}
+
+.login-block {
+  height: 16px;
+  color: #000000;
+  font-family: Cuprum;
+  font-size: 21px;
+  font-weight: 400;
+  line-height: 21px;
+}
+
+.login {
+  padding: 12px 26px 14px 46px;
+  background-color: #ffffff;
+}
+
+.registration {
+  padding: 12px 25px 14px 23px;
+  background-color: #ffffff;
+}
+
+nav {
+  background-image: url("img/nav.png");
+  background-position: top center;
+  background-repeat: no-repeat;
+ 
+}
+
+nav a {
+  padding: 20px 31px;
+  color: #ffffff;
+  font-family: Cuprum;
+  font-size: 17px;
+  line-height: 17px;  
+}
+
+/*main catalog*/
+.breadcrumbs a {
+  color: #000000;
+  font-family: "PT Sans";
+  font-size: 13px;
+  font-weight: 400;
+  line-height: 18px;
+  text-transform: uppercase;
+}
+
+.title {
+  width: 940px;
+  height: 89px;
+  background-color: #f2f6f8;
+  margin-bottom: 20px;
+}
+.title h2 {
+  color: #32425c;
+  font-family: Cuprum;
+  font-size: 30px;
+  font-weight: 400;
+  line-height: 30px;
+  text-transform: uppercase;
+}
+
+fieldset {
+  border: none;
+}
+
+.manufacturers {
+  color: #000000;
+  font-family: "PT Sans";
+  font-size: 17px;
+  font-weight: 700;
+  line-height: 30px;
+  text-transform: uppercase;
+}
+
+.supply {
+  color: #000000;
+  font-family: "PT Sans";
+  font-size: 17px;
+  font-weight: 700;
+  line-height: 30px;
+  text-transform: uppercase;
+}
+
+.manufacturers label {
+  color: #000000;
+  font-family: "PT Sans";
+  font-size: 15px;
+  font-weight: 400;
+  line-height: 20px;
+  text-transform: uppercase;
+}
+
+.list-manuf li {
+  margin-bottom: 20px;
+}
+
+.manuf-name {
+  color: #000000;
+  font-family: "PT Sans";
+  font-size: 15px;
+  font-weight: 400;
+  line-height: 20px;
+  text-transform: uppercase;
+}
+
+.supply-name {
+  color: #000000;
+  font-family: "PT Sans";
+  font-size: 15px;
+  font-weight: 400;
+  line-height: 20px;
+  text-transform: uppercase;
+}
+
+.filters button {
+  border: 1px solid #e5e5e5;
+  background-color: #ffffff;
+  padding: 11px 38px 8px;
+  
+}
+
+.line {
+  margin-bottom: 16px;
+  border: 1px solid #e5e5e5;
+  border-bottom-width: 0;
+}
+
+.catalog-item {
+  border: 1px solid #e5e5e5;
+  background-color: #ffffff;
+  width: 220px;
+  margin-bottom: 20px;
+}
+
+.catalog-category {
+  color: #000000;
+  font-family: "PT Sans";
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 20px;
+  text-align: center;
+}
+
+.old-price {
+  color: #999999;
+  font-family: "PT Sans";
+  font-size: 17px;
+  line-height: 18px;
+  text-decoration: line-through;
+  text-transform: uppercase;
+  text-align: center;
+}
+
+.red-price {
+  background-image: url("img/11.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  width: 141px;
+  height: 38px;
+  text-align: center;
+}
+
+/*main catalog over*/
+
+.pre-footer {
+  background-color: #ffffff;
+}
+
+.pre-footer h2 {
+  color: #000000;
+  font-family: "PT Sans";
+  font-size: 30px;
+  text-transform: uppercase;
+}
+.pre-footer p {
+  font-size: 13px;
+  font-family: "PT Sans","Arial",sans-serif;
+  color: #000000;
+}
+
+.pre-footer li {
+  font-family: Cuprum;
+  font-size: 18px;
+  line-height: 20px;
+  color: #000000
+}
+
+.aboutus {
+  padding: 12px 40px 10px;
+  text-align: center;
+  width: 220px;
+  height: 38px;
+  background-color: #ee3643;
+  color: #ffffff;
+  font-family: Cuprum;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 18px;
+  text-transform: uppercase;
+}
+
+.loss-btn {
+  padding: 13px 58px 8px 64px;
+  background-color: #ee3643;
+  color: #ffffff;
+  font-family: Cuprum;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 18px;
+  text-transform: uppercase;
+}
+
+.close-footer {
+  background-color: #32425c;
+}
+
+.close-footer p
+.footer-tel {
+  width: 322px;
+  height: 40px;
+  color: #f3f7f9;
+  font-family: Cuprum;
+  font-size: 18px;
+  line-height: 24px;
+}
+
+.links-1 a{
+  color: #f1f5f7;
+  font-family: Cuprum;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 24px;
+}
+
+.links-2 a{
+  color: #ffd180;
+  font-family: Cuprum;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 24px;
+}
+
+.main-footer {
+  background-color: #293449;
+}
+
+.main-footer p {
+  color: #ffffff;
+  font-family: Cuprum;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 18px;
+}
+
+.mail {
+  color: #ffd180;
+  font-family: Cuprum;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 18px;
+}
