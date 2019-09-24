@@ -16,27 +16,22 @@ body {
   }
 
   .main-header {
-    background-image: url("img/head.png");
+    background-image: url("../img/head.png");
     background-position: top center;
     background-repeat: no-repeat;
     color: #ffffff;
   }
 
-  h1 {
-    width: 109px;
-    height: 19px;
-  }
-
   input[type=search] {
     padding: 12px 0 12px 49px;
     border: none;
-    font-family: Cuprum;
+    font-family: "Cuprum","Arial",sans-serif;
     font-size: 17px;
   }
   label.search {
     width: 41px;
     height: 12px;
-    font-family: Cuprum;
+    font-family: "Cuprum","Arial",sans-serif;
     font-size: 17px;
   }
 
@@ -70,20 +65,16 @@ body {
     font-size: 17px;
   }
 
-/* сначала хотел сделать так, но не сработало. В чем ошибка? 
-  .main-header:nth-child(5) {
-    background-color: #63a63e;
-  } 
-  */
-.main-header a {
-  width: 100px;
-  padding: 12px 0 12px 50px;
-  font-size: 17px;
-  line-height: 18px;
-  font-style: normal;
-  font-family: "Cuprum","Arial",sans-serif;
-  text-align: left;
-  color: #ffffff;
+
+ .main-header a {
+    width: 100px;
+    padding: 12px 0 12px 50px;
+    font-size: 17px;
+    line-height: 18px;
+    font-style: normal;
+    font-family: "Cuprum","Arial",sans-serif;
+    text-align: left;
+    color: #ffffff;
 }
 
 .description {
@@ -96,12 +87,12 @@ body {
   color: #ee3643;;
 }
 
-.contacts a{
+.contacts a {
   width: 270px;
   height: 45px;
   border: 3px solid #ffffff;
   color: #ee3643;
-  font-family: Cuprum;
+  font-family: "Cuprum","Arial",sans-serif;
   font-size: 21px;
 }
 
@@ -109,23 +100,23 @@ body {
   width: 250px;
   height: 13px;
   color: #32425c;
-  font-family: Cuprum;
+  font-family: "Cuprum","Arial",sans-serif;
   font-size: 14px;
 }
 
-.user-name a{
+.user-name a {
   padding: 12px 65px 14px 46px;
   color: #000000;
-  font-family: Cuprum;
+  font-family: "Cuprum","Arial",sans-serif;
   font-size: 21px;
   font-weight: 400;
   line-height: 21px;
   background-color: #ffffff;
 }
 
-.user-info a{
+.user-info a {
   color: #32425c;
-  font-family: Cuprum;
+  font-family: "Cuprum","Arial",sans-serif;
   font-size: 16px;
   font-weight: 400;
   line-height: 18px;
@@ -135,7 +126,7 @@ body {
 .login-block {
   height: 16px;
   color: #000000;
-  font-family: Cuprum;
+  font-family: "Cuprum","Arial",sans-serif;
   font-size: 21px;
   font-weight: 400;
   line-height: 21px;
@@ -151,17 +142,17 @@ body {
   background-color: #ffffff;
 }
 
-nav {
-  background-image: url("img/nav.png");
+.navigation {
+  background-image: url("../img/nav.png");
   background-position: top center;
   background-repeat: no-repeat;
  
 }
 
-nav a {
+.navigation a {
   padding: 20px 31px;
   color: #ffffff;
-  font-family: Cuprum;
+  font-family: "Cuprum","Arial",sans-serif;
   font-size: 17px;
   line-height: 17px;  
 }
@@ -169,7 +160,7 @@ nav a {
 /*main catalog*/
 .breadcrumbs a {
   color: #000000;
-  font-family: "PT Sans";
+  font-family: "PT Sans","Arial",sans-serif;
   font-size: 13px;
   font-weight: 400;
   line-height: 18px;
@@ -184,20 +175,20 @@ nav a {
 }
 .title h2 {
   color: #32425c;
-  font-family: Cuprum;
+  font-family: "Cuprum","Arial",sans-serif;
   font-size: 30px;
   font-weight: 400;
   line-height: 30px;
   text-transform: uppercase;
 }
 
-fieldset {
+.field-option {
   border: none;
 }
 
 .manufacturers {
   color: #000000;
-  font-family: "PT Sans";
+  font-family: "PT Sans","Arial",sans-serif;
   font-size: 17px;
   font-weight: 700;
   line-height: 30px;
@@ -206,7 +197,7 @@ fieldset {
 
 .supply {
   color: #000000;
-  font-family: "PT Sans";
+  font-family: "PT Sans","Arial",sans-serif;
   font-size: 17px;
   font-weight: 700;
   line-height: 30px;
@@ -215,7 +206,7 @@ fieldset {
 
 .manufacturers label {
   color: #000000;
-  font-family: "PT Sans";
+  font-family: "PT Sans","Arial",sans-serif;
   font-size: 15px;
   font-weight: 400;
   line-height: 20px;
@@ -228,7 +219,7 @@ fieldset {
 
 .manuf-name {
   color: #000000;
-  font-family: "PT Sans";
+  font-family: "PT Sans","Arial",sans-serif;
   font-size: 15px;
   font-weight: 400;
   line-height: 20px;
@@ -237,7 +228,7 @@ fieldset {
 
 .supply-name {
   color: #000000;
-  font-family: "PT Sans";
+  font-family: "PT Sans","Arial",sans-serif;
   font-size: 15px;
   font-weight: 400;
   line-height: 20px;
@@ -266,7 +257,7 @@ fieldset {
 
 .catalog-category {
   color: #000000;
-  font-family: "PT Sans";
+  font-family: "PT Sans","Arial",sans-serif;
   font-size: 18px;
   font-weight: 700;
   line-height: 20px;
@@ -275,7 +266,7 @@ fieldset {
 
 .old-price {
   color: #999999;
-  font-family: "PT Sans";
+  font-family: "PT Sans","Arial",sans-serif;
   font-size: 17px;
   line-height: 18px;
   text-decoration: line-through;
@@ -284,7 +275,7 @@ fieldset {
 }
 
 .red-price {
-  background-image: url("img/11.png");
+  background-image: url("../img/11.png");
   background-repeat: no-repeat;
   background-position: center;
   width: 141px;
@@ -296,11 +287,12 @@ fieldset {
 
 .pre-footer {
   background-color: #ffffff;
+  width: 590px;
 }
 
 .pre-footer h2 {
   color: #000000;
-  font-family: "PT Sans";
+  font-family: "PT Sans","Arial",sans-serif;
   font-size: 30px;
   text-transform: uppercase;
 }
@@ -310,8 +302,12 @@ fieldset {
   color: #000000;
 }
 
+.extra-p {
+  width: 500px;
+}
+
 .pre-footer li {
-  font-family: Cuprum;
+  font-family: "Cuprum","Arial",sans-serif;
   font-size: 18px;
   line-height: 20px;
   color: #000000
@@ -324,7 +320,7 @@ fieldset {
   height: 38px;
   background-color: #ee3643;
   color: #ffffff;
-  font-family: Cuprum;
+  font-family: "Cuprum","Arial",sans-serif;
   font-size: 14px;
   font-weight: 400;
   line-height: 18px;
@@ -335,7 +331,7 @@ fieldset {
   padding: 13px 58px 8px 64px;
   background-color: #ee3643;
   color: #ffffff;
-  font-family: Cuprum;
+  font-family: "Cuprum","Arial",sans-serif;
   font-size: 14px;
   font-weight: 400;
   line-height: 18px;
@@ -351,22 +347,22 @@ fieldset {
   width: 322px;
   height: 40px;
   color: #f3f7f9;
-  font-family: Cuprum;
+  font-family: "Cuprum","Arial",sans-serif;
   font-size: 18px;
   line-height: 24px;
 }
 
-.links-1 a{
+.links-1 a {
   color: #f1f5f7;
-  font-family: Cuprum;
+  font-family: "Cuprum","Arial",sans-serif;
   font-size: 18px;
   font-weight: 400;
   line-height: 24px;
 }
 
-.links-2 a{
+.links-2 a {
   color: #ffd180;
-  font-family: Cuprum;
+  font-family: "Cuprum","Arial",sans-serif;
   font-size: 18px;
   font-weight: 400;
   line-height: 24px;
@@ -378,7 +374,7 @@ fieldset {
 
 .main-footer p {
   color: #ffffff;
-  font-family: Cuprum;
+  font-family: "Cuprum","Arial",sans-serif;
   font-size: 16px;
   font-weight: 400;
   line-height: 18px;
@@ -386,7 +382,7 @@ fieldset {
 
 .mail {
   color: #ffd180;
-  font-family: Cuprum;
+  font-family: "Cuprum","Arial",sans-serif;
   font-size: 16px;
   font-weight: 400;
   line-height: 18px;

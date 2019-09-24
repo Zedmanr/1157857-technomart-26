@@ -13,11 +13,9 @@
 <body>
   <header class="ferst-header">
     <section class="main-header">
-      <div class="logo">
-        <a href="main.html"><img src="img/index-logo.png" width="220" height="68" alt="Логотип Техномарт"></a>
-        <h1>техномарт</h1>
-      </div>
-
+   
+      <a class="logo" href="main.html"><img src="img/index-logo.png" width="220" height="68" alt="Логотип Техномарт"></a>
+        
       <label class="search" for="search">Поиск:</label>
       <input type="search" id="search" name="search">
 
@@ -28,9 +26,9 @@
     </section>
 
     <section>
-      <div class="description">
+      <h1 class="description">
         Интернет-магазин строительных материалов и инструментов для ремонта
-      </div>
+      </h1>
 
       <div class="contacts">
         <a href="tel:+78125550555">+7 (812) 555-05-55</a>
@@ -44,10 +42,10 @@
     </section>
 
     <section>
-      <nav>
+      <nav class="navigation">
         <ul>
           <li><a href="main.html">Главная</a></li>
-          <li><a href="aboutUs.html">Компания</a></li>
+          <li><a href="aboutus.html">Компания</a></li>
           <li><a href="catalog.html">Каталог</a></li>
           <li><a href="news.html">Новости</a></li>
           <li><a href="special.html">Спецпредложения</a></li>
@@ -256,12 +254,10 @@
     <section class="pre-footer">
       <h2>Компания "Техномарт"</h2>
       <p>
-        Настоящий мужской шопинг начинается здесь! Огромный выбор товаров для ремонта и<br>
-        строительства не оставит равнодушными любителей сэкономить на гастарбайтерах.
+        Настоящий мужской шопинг начинается здесь! Огромный выбор товаров для ремонта и строительства не оставит равнодушными любителей сэкономить на гастарбайтерах.
       </p>
-      <p>
-        Мы можем доставить ваш товар в самые отдалённые точки России!<br>
-        Техномарт работает со многими транспортными компаниями:
+      <p class="extra-p">
+        Мы можем доставить ваш товар в самые отдалённые точки России! Техномарт работает со многими транспортными компаниями:
       </p>
       <br>
       <ul>
@@ -270,7 +266,7 @@
         <li>ЖелДорЭкспедиция</li>
       </ul>
       <br>
-      <a class="aboutus" href="aboutUs.html">Подробнее о компании</a>
+      <a class="aboutus" href="aboutus.html">Подробнее о компании</a>
 
       <h2>Контакты</h2>
 
@@ -285,10 +281,10 @@
     <section class="visually-hidden">
       <form action="https://echo.htmlacademy.ru" method="post">
         <label for="user-name">Ваше имя</label>
-        <p><input id="user-name" type="text" name="name-client" placeholder="Имя Фамилия"></p>
+        <input id="user-name" type="text" name="name-client" placeholder="Имя Фамилия">
 
         <label for="user-email">Ваш e-mail:</label>
-        <p><input id="user-email" type="email" name="email" placeholder="email@example.com"></p>
+        <input id="user-email" type="email" name="email" placeholder="email@example.com">
 
         <label id="text-coment">Текст письма:</label>
         <p><textarea name="coment" id="text-coment" cols="20" rows="5">В свободной форме</textarea></p>
@@ -317,7 +313,7 @@
       </p>
 
       <ul class="links-1">
-        <li><a href="aboutUs.html"> Компания</a></li>
+        <li><a href="aboutus.html"> Компания</a></li>
         <li><a href="news.html"> Новости</a></li>
         <li><a href="catalog.html">Каталог</a></li>
         <li><a href="delivery.html">Доставка</a></li>
