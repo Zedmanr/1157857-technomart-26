@@ -8,18 +8,56 @@ body {
     background-color: #ffffff;
   }
 
+  .inner-page {
+    /* Временно для сетки 
+    background-image: url('../img/technomart-catalog.jpg');
+    background-size: 1200px auto;
+    background-position: top center;
+    background-repeat: no-repeat;*/
+  }
+  
+
   a {
     text-decoration: none;
   }
-  .ferst-header {
+
+  .container {
+    width: 940px;
+    margin: 0 auto;
+  }
+
+ .ferst-header {
+    min-height: 320px;
+    min-width: 1200px;
     background-color: #f3f7f8;
+    display: flex;
+    flex-direction: column;
+  } 
+
+  .second-header {
+    min-width: 1200px;
+    min-height: 278px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    padding-left: 183px;
+    padding-right: 183px;
   }
 
   .main-header {
-    background-image: url("../img/head.png");
+    min-width: 1200px;
+    min-height: 42px;
+    display: flex;
+    align-items: flex-start;
+    flex-direction: row;
+   /* background-image: url("../img/head.png");
     background-position: top center;
     background-repeat: no-repeat;
     color: #ffffff;
+    display: flex;
+    width: 1280px;
+    height: 42px;*/
   }
 
   input[type=search] {
@@ -58,17 +96,16 @@ body {
 
   .order {
     background-color: #63a63e;
-    padding: 12px 22px 12px 20px;
-    line-height: 18px;
+    width: 150px;
+    height: 42px;
     color: #ffffff;
-    font-family: Cuprum;
+    font-family: "Cuprum","Arial",sans-serif;
     font-size: 17px;
   }
 
 
  .main-header a {
     width: 100px;
-    padding: 12px 0 12px 50px;
     font-size: 17px;
     line-height: 18px;
     font-style: normal;
@@ -78,8 +115,8 @@ body {
 }
 
 .description {
-  width: 196px;
-  height: 60px;
+  width: 247px;
+  height: 69px;
   font-size: 16px;
   line-height: 23px;
   font-style: italic;
@@ -114,7 +151,7 @@ body {
   background-color: #ffffff;
 }
 
-.user-info a {
+.links a {
   color: #32425c;
   font-family: "Cuprum","Arial",sans-serif;
   font-size: 16px;
@@ -139,14 +176,25 @@ body {
 
 .registration {
   padding: 12px 25px 14px 23px;
-  background-color: #ffffff;
+  background-color: #684e4e;
 }
 
 .navigation {
-  background-image: url("../img/nav.png");
+  width: 940px;
+  height: 60px;
+  display: flex;
+  flex-direction: row-reverse;
+  /*background-image: url("../img/nav.png");
   background-position: top center;
-  background-repeat: no-repeat;
- 
+  background-repeat: no-repeat;*/
+}
+
+.navigation ul {
+  padding-left: 0;
+}
+
+.navigation li {
+  display: inline;
 }
 
 .navigation a {
@@ -157,7 +205,19 @@ body {
   line-height: 17px;  
 }
 
+.navigation:nth-child(7) {
+  margin-right: 0;
+}
+
 /*main catalog*/
+.breadcrumbs {
+  display:inline-block;
+  margin: 12px auto auto auto;
+}
+.breadcrumbs li {
+  display: inline;
+}
+
 .breadcrumbs a {
   color: #000000;
   font-family: "PT Sans","Arial",sans-serif;
@@ -167,12 +227,18 @@ body {
   text-transform: uppercase;
 }
 
+
 .title {
   width: 940px;
   height: 89px;
   background-color: #f2f6f8;
   margin-bottom: 20px;
 }
+
+.filter-catalog {
+  display: flex;
+}
+
 .title h2 {
   color: #32425c;
   font-family: "Cuprum","Arial",sans-serif;
@@ -193,6 +259,7 @@ body {
   font-weight: 700;
   line-height: 30px;
   text-transform: uppercase;
+  margin-top: 25px;
 }
 
 .supply {
@@ -201,7 +268,13 @@ body {
   font-size: 17px;
   font-weight: 700;
   line-height: 30px;
-  text-transform: uppercase;
+  text-transform: uppercase; 
+}
+
+.field-supply {
+  border: none;
+  display: flex;
+  flex-direction: column;
 }
 
 .manufacturers label {
@@ -235,6 +308,58 @@ body {
   text-transform: uppercase;
 }
 
+.filters {
+  display: flex;
+  flex-direction: column;
+}
+
+.filters h3 {
+  background-color: #f7f3ec;
+}
+
+.filters h2 {
+  color: #000000;
+  font-family: "PT Sans","Arial",sans-serif;
+  font-size: 17px;
+  font-weight: 700;
+  line-height: 30px;
+  text-transform: uppercase;
+}
+
+.range {
+  width: 220px;
+  height: 80px;
+  background-color: #f7f3ec;
+  margin-bottom: 9px;
+}
+
+input[type=text] {
+  width: 95px;
+  padding: 8px 2px 10px 8px;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 17px;
+  line-height: 18px;
+  font-family: "PT Sans","Arial",sans-serif;
+  text-align: center;
+  background-color: #f7f3ec;
+  border: none;
+  
+}
+
+.dash {
+  width: 10px;
+  height: 1px;
+  color: #444444;
+  font-family: "PT Sans","Arial",sans-serif;
+  font-size: 26px;
+}
+
+.price-box {
+  display: flex;
+  flex-direction: row;
+}
+
 .filters button {
   border: 1px solid #e5e5e5;
   background-color: #ffffff;
@@ -243,9 +368,31 @@ body {
 }
 
 .line {
+  margin-top: 25px;
   margin-bottom: 16px;
-  border: 1px solid #e5e5e5;
   border-bottom-width: 0;
+}
+
+.sorting {
+  width: 700px;
+  height: 38px;
+  
+}
+
+
+.sorting li {
+  display: inline;
+}
+
+.sorting h3 {
+  background-color: #f7f3ec;
+}
+
+.catalog-list {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  padding-left: 20px;
 }
 
 .catalog-item {
@@ -253,6 +400,7 @@ body {
   background-color: #ffffff;
   width: 220px;
   margin-bottom: 20px;
+  margin-right: 10px;
 }
 
 .catalog-category {
@@ -283,11 +431,36 @@ body {
   text-align: center;
 }
 
+.definition {
+  width: 1286px;
+  height: 261px;
+  background-color: #f2f6f8;
+}
+
+.definition h2 {
+  margin-bottom: 28px;
+  color: #000000;
+  text-transform: uppercase;
+  font-size: 30px;
+  font-family: "Cuprum","Arial",sans-serif;
+}
+
+.definition p {
+  font-weight: 400;
+  font-style: normal;
+  line-height: 24px;
+  color: #000000;
+  font-size: 13px;
+}
+
 /*main catalog over*/
 
 .pre-footer {
   background-color: #ffffff;
-  width: 590px;
+  display: flex;
+  justify-content: space-between;
+  padding-left: 183px;
+  padding-right: 183px;
 }
 
 .pre-footer h2 {
@@ -339,7 +512,18 @@ body {
 }
 
 .close-footer {
+  width: 1280px;
+  height: 193px;
   background-color: #32425c;
+  display: flex;
+  justify-content: space-between;
+  padding-left: 130px;
+  padding-right: 130px;
+}
+
+
+.footer-nav-2 li {
+  display: inline;
 }
 
 .close-footer p
@@ -350,6 +534,14 @@ body {
   font-family: "Cuprum","Arial",sans-serif;
   font-size: 18px;
   line-height: 24px;
+}
+
+.links-1 {
+  margin-top: 42px;
+}
+
+.links-2 {
+  margin-top: 45px;
 }
 
 .links-1 a {
@@ -370,6 +562,12 @@ body {
 
 .main-footer {
   background-color: #293449;
+  width: 1280px;
+  height: 107px;
+  display: flex;
+  justify-content: space-between;
+  padding-left: 130px;
+  padding-right: 130px;
 }
 
 .main-footer p {
