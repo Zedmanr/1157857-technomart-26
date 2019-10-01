@@ -11,21 +11,22 @@
 </head>
 
 <body>
-  <header class="ferst-header">
-    <section class="main-header container">
+  <header class="ferst-header container">
+    <section class="main-header">
 
-      <a class="logo" href="main.html"><img src="img/index-logo.png" width="220" height="68" alt="Логотип Техномарт"></a>
+      <a class="logo" href="main.html"><img src="img/index-logo.png" width="220" height="47"
+          alt="Логотип Техномарт"></a>
 
       <label class="search" for="search">Поиск:</label>
       <input type="search" id="search" name="search">
 
       <a class="bookmark" href="#">Закладки:<span class="counter">0</span></a>
-      <a class="basket" href="#">Корзина:<span class="buy">0</span></a>
+      <a class="basket-catalog" href="#">Корзина:<span class="buy">0</span></a>
 
       <a class="order" href="#">Оформить заказ</a>
     </section>
 
-    <section class="second-header container">
+    <section class="second-header">
       <h1 class="description">
         Интернет-магазин строительных материалов и инструментов для ремонта
       </h1>
@@ -56,70 +57,73 @@
     </section>
   </header>
 
-  <main> 
-    <section>
-      <div class="new">
+  <main>
+    <section class="ferst-main container">
+      <div class="new materials divide-main">
         <h2>Материалы</h2>
         <img src="img/materials.png" alt="материалы">
         <!--Потом переделаю в svg-->
         <a href="#">на любой вкус</a>
       </div>
-      <div>
+      <div class="tools divide-main">
         <h2>Инструмент</h2>
         <img src="img/tool.png" alt="инструмент">
         <!--Потом переделаю в svg-->
         <a href="#">на все случаи</a>
       </div>
-      <div>
+      <div class="technics divide-main">
         <h2>Техника</h2>
         <img src="img/tech.png" alt="Техника">
         <!--Потом переделаю в svg-->
         <a href="#">для стройки</a>
       </div>
-      <div>
+      <div class="slider-item divide-main">
+        <h2>дрели</h2>
+        <p>Соседям на радость</p>
+
+        <a href="catalog.html">открыть каталог</a>
+      </div>
+      <div class="special divide-main">
         <h2>Скидки 50%</h2>
         <img src="img/special.png" alt="Скидки">
         <!--Потом переделаю в svg-->
         <a href="special.html"> на 350 товаров</a>
       </div>
-      <div>
+      <div class="delivery divide-main">
         <h2>Доставка</h2>
         <img src="img/delivery.png" alt="доставка">
         <!--Потом переделаю в svg-->
         <a href="delivery.html">Бесплатно</a>
       </div>
-      <div class="slider-item">
-        <h2>дрели</h2>
-        <p>Соседям на радость</p>
-        <img src="img/drill.jpg" width="620" height="266" alt="дрели">
-        <a href="catalog.html">открыть каталог</a>
-      </div>
+
+      <!--    Временно скрыл, пока не настрою слайдер
       <div class="slider-item">
         <h2>перфораторы</h2>
         <p>Настоящие мужские игружки</p>
         <img src="img/hammer.jpg" width="620" height="266" alt="перфораторы">
         <a href="catalog.html">открыть каталог</a>
-      </div>
+      </div> -->
     </section>
 
-    <section>
+    <section class="lobby container">
       <h2>популярныее товары:</h2>
-      <a href="catalog.html">все популярные товары</a>
+      <a class="lobby-btn" href="catalog.html">все популярные товары</a>
     </section>
-    <section>
-      <ul class="catalog-index">
-        <li class="catalog-item">
-          <p class="catalog-item-price">
-            <a class="button" href="">купить</a>
-            <a class="button" href="">в закладки</a>
-          </p>
+
+    <section class="container catalog-index">
+      <ul>
+        <li class="catalog-item-main">
+          <ul class="hidden-button">
+            <li><button type="button">купить</button>
+            <li><button type="button">в закладки</button></li>
+          </ul>
+
           <p class="catalog-item-image">
             <img src="img/BFG9000.jpg" alt="BFG 9000" width="218px" height="170px">
           </p>
 
-          <h3>
-            <span class="catalog category">Перфоратор </span>
-            <span class="catalog-item-title">BOSCH BFG 9000</span>
+          <h3 class="catalog-category">
+            Перфоратор BOSCH<br> BFG 9000
           </h3>
 
           <p class="old-price">
@@ -129,18 +133,18 @@
             25500 Р.
           </p>
         </li>
-        <li class="catalog-item">
-          <p class="catalog-item-price">
-            <a class="button" href="">купить</a>
-            <a class="button" href="">в закладки</a>
-          </p>
+        <li class="catalog-item-main">
+          <ul class="hidden-button">
+            <li><button type="button">купить</button>
+            <li><button type="button">в закладки</button></li>
+          </ul>
+
           <p class="catalog-item-image">
             <img src="img/BFG3000.jpg" alt="BFG 3000" width="218px" height="170px">
           </p>
 
-          <h3>
-            <span class="catalog category">Перфоратор </span>
-            <span class="catalog-item-title">BOSCH BFG 3000</span>
+          <h3 class="catalog-category">
+            Перфоратор BOSCH<br>BFG 3000
           </h3>
 
           <p class="old-price">
@@ -150,18 +154,18 @@
             15500 Р.
           </p>
         </li>
-        <li class="catalog-item">
-          <p class="catalog-item-price">
-            <a class="button" href="">купить</a>
-            <a class="button" href="">в закладки</a>
-          </p>
+        <li class="catalog-item-main">
+          <ul class="hidden-button">
+            <li><button type="button">купить</button>
+            <li><button type="button">в закладки</button></li>
+          </ul>
+
           <p class="catalog-item-image">
             <img src="img/BFG6000.jpg" alt="BFG 6000" width="218px" height="170px">
           </p>
 
-          <h3>
-            <span class="catalog category">Перфоратор </span>
-            <span class="catalog-item-title">BOSCH BFG 6000</span>
+          <h3 class="catalog-category">
+            Перфоратор BOSCH<br>BFG 6000
           </h3>
 
           <p class="old-price">
@@ -171,33 +175,34 @@
             25500 Р.
           </p>
         </li>
-        <li class="catalog-item">
-          <p class="catalog-item-price">
-            <a class="button" href="">купить</a>
-            <a class="button" href="">в закладки</a>
-          </p>
+        <li class="catalog-item-main">
+          <ul class="hidden-button">
+            <li><button type="button">купить</button>
+            <li><button type="button">в закладки</button></li>
+          </ul>
+
           <p class="catalog-item-image new">
             <img src="img/BFG2000.jpg" alt="BFG 2000" width="218px" height="170px">
           </p>
 
-          <h3>
-            <span class="catalog category">Перфоратор </span>
-            <span class="catalog-item-title">BOSCH BFG 2000</span>
+          <h3 class="catalog-category">
+            Перфоратор BOSCH<br>BFG 2000
           </h3>
 
           <p class="red-price">
             12500 Р.
           </p>
         </li>
+      </ul>
     </section>
 
-    <section>
+    <section class="lobby-2 container">
       <h2>популярные производители</h2>
       <a href="#">все производители</a>
     </section>
 
-    <section>
-      <ul>
+    <section class="brand container">
+      <ul class="brand-list">
         <li><a href="#"><img src="img/bosch.png" width="126" height="37" alt="bosch"></a></li>
         <li><a href="#"><img src="img/makita.png" width="126" height="37" alt="makita"></a></li>
         <li><a href="#"><img src="img/dewalt.png" width="126" height="37" alt="DeWALT"></a></li>
@@ -209,28 +214,30 @@
       </ul>
     </section>
 
-    <section>
+    <section class="service container">
 
       <h2>Сервисы</h2>
       <p>
         Хороший интернет-магазин отличается от плохого не только ценами!<br>
         Мы стараемся изо всех сил, чтобы сделать выши покупки приятными.
       </p>
-
-      <input type="radio" name="service-switch" id="button-1" checked>
-      <label for="button-1">Доставка</label>
-      <h3>доставка</h3>
-      <p>
-        Мы с удовольствием доставим ваш товар прямо<br>
-        к вашему подъезду совершенно бесплатно!<br>
-        Ведь мы неплохо заработаем, <br>
-        поднимая его на ваш этаж!
-      </p>
-      <img src="img/delivery2.png" width="468" height="261" alt="Доставка">
-
+      <div class="delivery-switch">
+        <input type="radio" name="service-switch" id="button-1" checked>
+        <label for="button-1">Доставка</label>
+        <div>
+          <h3>доставка</h3>
+          <p>
+            Мы с удовольствием доставим ваш товар прямо<br>
+            к вашему подъезду совершенно бесплатно!<br>
+            Ведь мы неплохо заработаем, <br>
+            поднимая его на ваш этаж!
+          </p>
+        </div>
+      </div>
+      <!-- До слайдера 
       <input type="radio" name="service-switch" id="button-2">
       <label for="button-2">Гарантия</label>
-      <h3>Гарантия</h3>
+     <h3>Гарантия</h3>
       <p>
         Если купленный у нас товар поломается или заискрит,<br>
         а также в случае пожара, спровоцированного его возгоранием,<br>
@@ -248,7 +255,7 @@
         Кредитные консультанты придут вам на помощь.
       </P>
       <img src="img/credit.png" width="465" height="285" alt="Кредит">
-      <a href="#">отправить заявку</a>
+      <a href="#">отправить заявку</a> -->
     </section>
 
     <section class="pre-footer container">
@@ -262,13 +269,13 @@
           Мы можем доставить ваш товар в самые отдалённые точки России! Техномарт работает со многими транспортными
           компаниями:
         </p>
-        <br>
+
         <ul>
           <li>Деловые линии</li>
           <li>Автотрейдинг</li>
           <li>ЖелДорЭкспедиция</li>
         </ul>
-        <br>
+
         <a class="aboutus" href="aboutus.html">Подробнее о компании</a>
       </div>
 
@@ -279,35 +286,21 @@
           Вы можете забрать товар, <br>
           заехав в наш офис:
         </p>
-        <br>
+
         <img src="img/map.jpg" width="300" height="158"
           alt="Офис компании по адресу ул. Большая Конюшенная 19/8, Санкт-Петербург">
         <a class="loss-btn" href="contacts.html">заблудились? напишите нам!</a>
       </div>
     </section>
 
-    <section class="visually-hidden container">
-      <form action="https://echo.htmlacademy.ru" method="post">
-        <label for="user-name">Ваше имя</label>
-        <input id="user-name" type="text" name="name-client" placeholder="Имя Фамилия">
 
-        <label for="user-email">Ваш e-mail:</label>
-        <input id="user-email" type="email" name="email" placeholder="email@example.com">
-
-        <label id="text-coment">Текст письма:</label>
-        <p><textarea name="coment" id="text-coment" cols="20" rows="5">В свободной форме</textarea></p>
-      </form>
-      <button type="button">
-        отправить
-      </button>
-    </section>
   </main>
 
-  <footer>
+  <footer class="container">
     <section class="close-footer container">
       <div class="footer-nav-1">
         <a class="logo" href="main.html"><img src="img/index-logo.png" width="220" height="68"
-          alt="Логотип Техномарт"></a>
+            alt="Логотип Техномарт"></a>
 
         <p>
           г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8 <br>
@@ -357,5 +350,21 @@
 
     </section>
   </footer>
+  <section class="visually-hidden container">
+    <form action="https://echo.htmlacademy.ru" method="post">
+      <label for="user-name">Ваше имя</label>
+      <input id="user-name" type="text" name="name-client" placeholder="Имя Фамилия">
+
+      <label for="user-email">Ваш e-mail:</label>
+      <input id="user-email" type="email" name="email" placeholder="email@example.com">
+
+      <label id="text-coment">Текст письма:</label>
+      <p><textarea name="coment" id="text-coment" cols="20" rows="5">В свободной форме</textarea></p>
+    </form>
+    <button type="button">
+      отправить
+    </button>
+  </section>
 </body>
+
 </html>

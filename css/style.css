@@ -8,56 +8,51 @@ body {
     background-color: #ffffff;
   }
 
-  .inner-page {
-    /* Временно для сетки 
-    background-image: url('../img/technomart-catalog.jpg');
-    background-size: 1200px auto;
-    background-position: top center;
-    background-repeat: no-repeat;*/
-  }
-  
-
   a {
     text-decoration: none;
   }
 
   .container {
-    width: 940px;
     margin: 0 auto;
   }
 
  .ferst-header {
-    min-height: 320px;
-    min-width: 1200px;
+    height: 320px;
+    width: 1200px;
     background-color: #f3f7f8;
     display: flex;
     flex-direction: column;
   } 
 
   .second-header {
-    min-width: 1200px;
-    min-height: 278px;
+    height: 100px;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
     flex-wrap: wrap;
-    padding-left: 183px;
-    padding-right: 183px;
+    padding-left: 130px;
+    padding-right: 130px;
+    padding-top: 46px;
+  }
+
+  .third-header {
+    width: 940px;
+    height: 60px;
+    margin-top: 44px;
+    background-color: #32425c;
+    border-bottom: 3px solid #293449;
   }
 
   .main-header {
-    min-width: 1200px;
-    min-height: 42px;
     display: flex;
     align-items: flex-start;
     flex-direction: row;
-   /* background-image: url("../img/head.png");
-    background-position: top center;
-    background-repeat: no-repeat;
+    background-color: #293449;
     color: #ffffff;
     display: flex;
-    width: 1280px;
-    height: 42px;*/
+    height: 42px;
+    padding-left: 130px;
+    padding-right: 130px;
   }
 
   input[type=search] {
@@ -116,7 +111,6 @@ body {
 
 .description {
   width: 247px;
-  height: 69px;
   font-size: 16px;
   line-height: 23px;
   font-style: italic;
@@ -180,17 +174,13 @@ body {
 }
 
 .navigation {
-  width: 940px;
-  height: 60px;
   display: flex;
   flex-direction: row-reverse;
-  /*background-image: url("../img/nav.png");
-  background-position: top center;
-  background-repeat: no-repeat;*/
 }
 
 .navigation ul {
   padding-left: 0;
+  list-style: none;
 }
 
 .navigation li {
@@ -198,22 +188,239 @@ body {
 }
 
 .navigation a {
-  padding: 20px 31px;
+  padding: 14px 30px;
   color: #ffffff;
   font-family: "Cuprum","Arial",sans-serif;
   font-size: 17px;
   line-height: 17px;  
 }
 
-.navigation:nth-child(7) {
+/*main index*/
+.ferst-main {
+  width: 940px;
+  padding-left: 130px;
+  padding-right: 130px;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  margin-top: 59px;
+}
+
+.divide-main {
+  margin-bottom: 20px;
+  margin-right: 20px;
+}
+
+.divide-main:nth-child(3n) {
   margin-right: 0;
 }
 
-/*main catalog*/
-.breadcrumbs {
-  display:inline-block;
-  margin: 12px auto auto auto;
+.materials {
+  width: 300px;
+  height: 123px;
+  background-color: #ffbf47;
 }
+
+.tools {
+  width: 300px;
+  height: 123px;
+  background-color: #3bbce3;
+}
+
+.technics {
+  width: 300px;
+  height: 123px;
+  background-color: #dc91d8;
+}
+
+.special {
+  width: 300px;
+  height: 123px;
+  background-color: #8ed78f;
+  margin-right: 0;
+}
+
+.delivery {
+  width: 300px;
+  height: 123px;
+  background-color: #ffc047;
+}
+
+.slider-item {
+  width: 620px;
+  height: 266px;
+  background-image: url(../img/drill.jpg);
+}
+
+.lobby {
+  width: 940px;
+  height: 89px;
+  margin-top: 53px;
+  background-color: #f9f5f0;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.lobby h2 {
+  color: #32425c;
+  font-family: "Cuprum","Arial",sans-serif;
+  font-size: 30px;
+  font-weight: 400;
+  line-height: 30px;
+  text-transform: uppercase;
+}
+
+.lobby-btn {
+  padding: 11px 55px 9px;
+  margin: 25px 24px 0 0;
+  font-size: 14px;
+  line-height: 18px;
+  text-align: center;
+  background-color: #ee3643;
+  color: #fff;
+  border-radius: 4px;
+}
+
+.catalog-index {
+  margin-top: 21px;
+  width: 940px;
+  padding-left: 130px;
+  padding-right: 130px;
+
+}
+
+.catalog-index ul {
+  display: flex;
+  flex-direction: row;
+  padding-left: 0;
+}
+
+.catalog-item-main {
+  border: 1px solid #e5e5e5;
+  background-color: #ffffff;
+  width: 220px;
+  margin-bottom: 20px;
+  margin-right: 21px;
+}
+.lobby-2 {
+  width: 940px;
+  height: 89px;
+  background-color: #f9f5f0;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.lobby-2 h2 {
+  color: #32425c;
+  font-family: "Cuprum","Arial",sans-serif;
+  font-size: 30px;
+  font-weight: 400;
+  line-height: 30px;
+  text-transform: uppercase;
+}
+
+.brand {
+  width: 940px;
+  padding-left: 130px;
+  padding-right: 130px;
+}
+
+.brand ul{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  padding-left: 0;
+}
+
+.brand-list li:nth-child(4n+4) {
+  margin-right: 0;
+}
+
+.brand li{
+  width: 218px;
+  height: 143px;
+  margin: 0 20px 20px 0;
+  border: 1px solid #e5e5e5;
+}
+
+.service {
+  width: 940px;
+  height: 522px;
+  padding-left: 183px;
+  padding-right: 183px;
+  background-color: #f2f6f8;
+}
+
+.service h2 {
+  text-transform: uppercase;
+  color: #000;
+  font-size: 30px;
+  font-family: "Cuprum","Arial",sans-serif;
+}
+
+.service p {
+  padding-bottom: 64px;
+  font-size: 13px;
+  font-family: "PT Sans","Arial",sans-serif;
+  color: #000;
+}
+
+.service h3 {
+  text-transform: uppercase;
+  color: #32425c;
+  font-size: 36px;
+  font-family: "Cuprum","Arial",sans-serif;
+}
+
+.delivery-switch {
+  width: 940px;
+  height: 285;
+  display: flex;
+  flex-direction: row;
+  background-image: url(../img/delivery2.png);
+  background-repeat: no-repeat;
+  background-position: right;
+}
+
+.pre-footer {
+  width: 940px;
+  height: 537px;
+  background-color: #ffffff;
+  display: flex;
+  justify-content: space-between;
+  padding-left: 183px;
+  padding-right: 183px;
+}
+
+.pre-footer h2 {
+  color: #000000;
+  font-family: "PT Sans","Arial",sans-serif;
+  font-size: 30px;
+  text-transform: uppercase;
+}
+.pre-footer p {
+  font-size: 13px;
+  font-family: "PT Sans","Arial",sans-serif;
+  color: #000000;
+}
+/*main index*/
+
+/*main catalog*/
+
+.main-catalog {
+  width: 940px;
+  padding-left: 130px;
+  padding-right: 130px;
+}
+.part-breadcrumbs {
+  width: 940px;
+  height: 60px;
+  padding-left: 130px;
+  padding-right: 130px;
+}
+
 .breadcrumbs li {
   display: inline;
 }
@@ -227,11 +434,11 @@ body {
   text-transform: uppercase;
 }
 
-
 .title {
   width: 940px;
   height: 89px;
   background-color: #f2f6f8;
+
   margin-bottom: 20px;
 }
 
@@ -355,6 +562,10 @@ input[type=text] {
   font-size: 26px;
 }
 
+.dash::after {
+  content: "—"
+}
+
 .price-box {
   display: flex;
   flex-direction: row;
@@ -384,7 +595,8 @@ input[type=text] {
   display: inline;
 }
 
-.sorting h3 {
+.sorting {
+  display: flex;
   background-color: #f7f3ec;
 }
 
@@ -432,8 +644,10 @@ input[type=text] {
 }
 
 .definition {
-  width: 1286px;
+  width: 940px;
   height: 261px;
+  padding-left: 130px;
+  padding-right: 130px;
   background-color: #f2f6f8;
 }
 
@@ -455,25 +669,7 @@ input[type=text] {
 
 /*main catalog over*/
 
-.pre-footer {
-  background-color: #ffffff;
-  display: flex;
-  justify-content: space-between;
-  padding-left: 183px;
-  padding-right: 183px;
-}
 
-.pre-footer h2 {
-  color: #000000;
-  font-family: "PT Sans","Arial",sans-serif;
-  font-size: 30px;
-  text-transform: uppercase;
-}
-.pre-footer p {
-  font-size: 13px;
-  font-family: "PT Sans","Arial",sans-serif;
-  color: #000000;
-}
 
 .extra-p {
   width: 500px;
@@ -512,7 +708,7 @@ input[type=text] {
 }
 
 .close-footer {
-  width: 1280px;
+  width: 940px;
   height: 193px;
   background-color: #32425c;
   display: flex;
@@ -562,7 +758,7 @@ input[type=text] {
 
 .main-footer {
   background-color: #293449;
-  width: 1280px;
+  width: 940px;
   height: 107px;
   display: flex;
   justify-content: space-between;
