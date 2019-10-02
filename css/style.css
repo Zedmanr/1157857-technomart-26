@@ -18,7 +18,6 @@ body {
 
  .ferst-header {
     height: 320px;
-    width: 1200px;
     background-color: #f3f7f8;
     display: flex;
     flex-direction: column;
@@ -36,7 +35,9 @@ body {
   }
 
   .third-header {
-    width: 940px;
+    width: 960px;
+    padding-left: 10px;
+    padding-right: 10px;
     height: 60px;
     margin-top: 44px;
     background-color: #32425c;
@@ -197,7 +198,7 @@ body {
 
 /*main index*/
 .ferst-main {
-  width: 940px;
+  width: 960px;
   padding-left: 130px;
   padding-right: 130px;
   display: flex;
@@ -253,7 +254,7 @@ body {
 }
 
 .lobby {
-  width: 940px;
+  width: 960px;
   height: 89px;
   margin-top: 53px;
   background-color: #f9f5f0;
@@ -284,7 +285,7 @@ body {
 
 .catalog-index {
   margin-top: 21px;
-  width: 940px;
+  width: 960px;
   padding-left: 130px;
   padding-right: 130px;
 
@@ -304,7 +305,7 @@ body {
   margin-right: 21px;
 }
 .lobby-2 {
-  width: 940px;
+  width: 960px;
   height: 89px;
   background-color: #f9f5f0;
   display: flex;
@@ -322,7 +323,7 @@ body {
 }
 
 .brand {
-  width: 940px;
+  width: 960px;
   padding-left: 130px;
   padding-right: 130px;
 }
@@ -346,7 +347,7 @@ body {
 }
 
 .service {
-  width: 940px;
+  width: 960px;
   height: 522px;
   padding-left: 183px;
   padding-right: 183px;
@@ -375,7 +376,7 @@ body {
 }
 
 .delivery-switch {
-  width: 940px;
+  width: 960px;
   height: 285;
   display: flex;
   flex-direction: row;
@@ -385,7 +386,7 @@ body {
 }
 
 .pre-footer {
-  width: 940px;
+  width: 960px;
   height: 537px;
   background-color: #ffffff;
   display: flex;
@@ -410,12 +411,12 @@ body {
 /*main catalog*/
 
 .main-catalog {
-  width: 940px;
+  width: 960px;
   padding-left: 130px;
   padding-right: 130px;
 }
 .part-breadcrumbs {
-  width: 940px;
+  width: 960px;
   height: 60px;
   padding-left: 130px;
   padding-right: 130px;
@@ -435,7 +436,7 @@ body {
 }
 
 .title {
-  width: 940px;
+  width: 960px;
   height: 89px;
   background-color: #f2f6f8;
 
@@ -571,6 +572,20 @@ input[type=text] {
   flex-direction: row;
 }
 
+.field-option::before {
+  display: block;
+  width:220px;
+  content: '';
+  border-bottom: 1px solid #e5e5e5;
+}
+
+.field-option::after {
+  display: block;
+  width:220px;
+  content: '';
+  border-bottom: 1px solid #e5e5e5;
+}
+
 .filters button {
   border: 1px solid #e5e5e5;
   background-color: #ffffff;
@@ -605,6 +620,10 @@ input[type=text] {
   flex-direction: row;
   flex-wrap: wrap;
   padding-left: 20px;
+}
+
+.catalog-item:nth-child(3n) {
+  margin-right: 0;
 }
 
 .catalog-item {
@@ -644,7 +663,6 @@ input[type=text] {
 }
 
 .definition {
-  width: 940px;
   height: 261px;
   padding-left: 130px;
   padding-right: 130px;
@@ -707,14 +725,26 @@ input[type=text] {
   text-transform: uppercase;
 }
 
-.close-footer {
-  width: 940px;
-  height: 193px;
+.begin-footer { 
   background-color: #32425c;
+}
+
+.close-footer {
+  width: 960px;
+  height: 193px;
   display: flex;
   justify-content: space-between;
   padding-left: 130px;
   padding-right: 130px;
+}
+
+.over-footer {
+  width: 960px;
+  display: flex;
+  justify-content: space-between;
+  padding-left: 130px;
+  padding-right: 130px;
+  margin: 0 auto;
 }
 
 
@@ -758,12 +788,7 @@ input[type=text] {
 
 .main-footer {
   background-color: #293449;
-  width: 940px;
   height: 107px;
-  display: flex;
-  justify-content: space-between;
-  padding-left: 130px;
-  padding-right: 130px;
 }
 
 .main-footer p {
