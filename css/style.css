@@ -24,6 +24,7 @@ body {
   } 
 
   .second-header {
+    width: 960px;
     height: 100px;
     display: flex;
     flex-direction: row;
@@ -48,12 +49,13 @@ body {
     display: flex;
     align-items: flex-start;
     flex-direction: row;
+    justify-content: space-between;
     background-color: #293449;
     color: #ffffff;
     display: flex;
     height: 42px;
-    padding-left: 130px;
-    padding-right: 130px;
+    padding-left: 460px;
+    padding-right: 460px;
   }
 
   input[type=search] {
