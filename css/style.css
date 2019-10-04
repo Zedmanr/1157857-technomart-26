@@ -16,6 +16,24 @@ body {
     margin: 0 auto;
   }
 
+  .out-wrapper {
+    background-color: #293449;
+    color: #ffffff;
+    display: flex;
+    height: 42px;
+  }
+
+  .main-header {
+    width: 960px;
+    margin: 0 auto;
+    padding-left: 10px;
+    padding-right: 10px;
+    display: flex;
+    align-items: flex-start;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
  .ferst-header {
     height: 320px;
     background-color: #f3f7f8;
@@ -45,18 +63,7 @@ body {
     border-bottom: 3px solid #293449;
   }
 
-  .main-header {
-    display: flex;
-    align-items: flex-start;
-    flex-direction: row;
-    justify-content: space-between;
-    background-color: #293449;
-    color: #ffffff;
-    display: flex;
-    height: 42px;
-    padding-left: 460px;
-    padding-right: 460px;
-  }
+
 
   input[type=search] {
     padding: 12px 0 12px 49px;
