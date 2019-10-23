@@ -17,7 +17,7 @@ a {
 }
 
 .container-main {
-  width: 940px;
+  width: 960px;
   margin: 0 auto;
 }
 
@@ -29,8 +29,10 @@ a {
 }
 
 .main-header {
-  width: 940px;
+  width: 960px;
   margin: 0 auto;
+  padding-left: 10px;
+  padding-right: 10px;
   display: flex;
   align-items: flex-start;
   flex-direction: row;
@@ -75,15 +77,15 @@ a {
 }
 
 .second-header {
-  margin: 0 auto;
-  width: 940px;
+  width: 960px;
   height: 100px;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
   flex-wrap: wrap;
+  padding-left: 130px;
+  padding-right: 130px;
   padding-top: 46px;
-  margin: 0 auto;
 }
 
 .search-header, .input-header {
@@ -96,10 +98,6 @@ input[type=search] {
   font-family: "Cuprum", "Arial", sans-serif;
   font-size: 17px;
   background-color: #293449;
-}
-
-input[type=search]:hover {
-  background: #212a3a;
 }
 
 .search {
@@ -137,14 +135,6 @@ input[type=search]:hover {
   font-family: "Cuprum", "Arial", sans-serif;
   text-align: left;
   color: #ffffff;
-}
-
-.bookmark:hover {
-  background: #212a3a;
-}
-
-.bookmark:active {
-  background:#161d29
 }
 
 .basket-catalog::before {
@@ -222,10 +212,6 @@ input[type=search]:hover {
   background-color: #293449;
 }
 
-.basket-catalog:hover {
-  background: #212a3a;
-}
-
 .basket-catalog-red {
   position: relative;
   width: 100px;
@@ -247,10 +233,6 @@ input[type=search]:hover {
   padding: 12px 0 12px 25px;
 }
 
-.order:hover {
-  background-color: #5fbb2d;
-}
-
 .main-header a {
   font-size: 17px;
   line-height: 18px;
@@ -263,7 +245,7 @@ input[type=search]:hover {
 .description {
   margin-top: 0;
   padding-left: 53px;
-  width: 205px;
+  width: 200px;
   font-size: 16px;
   line-height: 28px;
   font-style: italic;
@@ -356,7 +338,6 @@ input[type=search]:hover {
 
 .user-info li {
   display: inline-block;
-  vertical-align: middle;
 }
 
 .links a {
@@ -441,14 +422,11 @@ input[type=search]:hover {
   background-color: #ffffff;
 }
 
-.third-header {
-  width: 940px;
-}
-
 .navigation {
   float: left;
   width: 940px;
   padding-left: 10px;
+  padding-right: 10px;
   height: 60px;
   margin-top: 30px;
   background-color: #32425c;
@@ -464,7 +442,6 @@ input[type=search]:hover {
   display: inline-block;
   text-align: center;
   vertical-align: middle;
-  vertical-align: top;
 }
 
 .navigation a {
@@ -484,7 +461,9 @@ input[type=search]:hover {
 }
 
 .ferst-main {
-  width: 940px;
+  width: 960px;
+  padding-left: 130px;
+  padding-right: 130px;
   display: flex;
   flex-direction: row;
   margin-top: 59px;
@@ -503,7 +482,7 @@ input[type=search]:hover {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
-  margin-left: 10px;
+  margin-left: 20px;
   width: 310px;
 }
 
@@ -543,22 +522,9 @@ input[type=search]:hover {
   background-size: 44px 65px;
 }
 
-.lobby-index {
-  margin: 0 auto;
-  margin-bottom: 20px;
-}
-
 .title {
-  width: 925px;
+  width: 940px;
   margin: 0 auto;
-  padding-left: 28px;
-  font-weight: 400;
-  font-style: normal;
-  font-size: 30px;
-  line-height: 30px;
-  font-family: "Cuprum", "Arial", sans-serif;
-  text-transform: uppercase;
-  color: #32425c;
 }
 
 .title-contents {
@@ -575,7 +541,6 @@ input[type=search]:hover {
 
 .btn-contents {
   display: inline-block;
-  vertical-align: top;
   color: #ffffff;
   font-family: "Cuprum", "Arial", sans-serif;
   font-size: 14px;
@@ -667,7 +632,6 @@ input[type=search]:hover {
 
 .slider-controls label {
   display: inline-block;
-  vertical-align: top;
   margin: 0 3px;
   width: 6px;
   height: 6px;
@@ -754,14 +718,13 @@ input[type=search]:hover {
 }
 
 .lobby {
-  width: 940px;
+  width: 960px;
   height: 89px;
   margin-top: 0;
   background-color: #f9f5f0;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-  margin: 0 auto;
 }
 
 .lobby h2 {
@@ -792,7 +755,9 @@ input[type=search]:hover {
 
 .catalog-index {
   margin-top: 21px;
-  width: 940px;
+  width: 960px;
+  padding-left: 130px;
+  padding-right: 130px;
 }
 
 .catalog-index ul {
@@ -817,7 +782,9 @@ input[type=search]:hover {
 }
 
 .brand {
-  width: 940px;
+  width: 960px;
+  padding-left: 130px;
+  padding-right: 130px;
 }
 
 .brand ul {
@@ -848,22 +815,19 @@ input[type=search]:hover {
 .brand a {
   position: relative;
   display: inline-block;
-  vertical-align: top;
   width: 218px;
   height: 143px;
   vertical-align: middle;
 }
-
-.brand-list a:hover {
-  box-shadow: 0 10px 25px rgba(41,52,73,.5);
-} 
 
 .service-wrapper {
   background-color: #f2f6f8;
 }
 
 .service {
-  width: 940px;
+  width: 960px;
+  padding-left: 183px;
+  padding-right: 183px;
   height: 522px;
 }
 
@@ -933,7 +897,7 @@ input[type=search]:hover {
 }
 
 .switchs {
-  width: 940px;
+  width: 960px;
   height: 285px;
   display: flex;
   flex-direction: row;
@@ -963,14 +927,14 @@ input[type=search]:hover {
   height: 261px;
   background-image: url(../img/guarranty.png);
   background-repeat: no-repeat;
-  background-position: 225px 20px;
+  background-position: 231px 20px;
 }
 
 .credit {
   height: 261px;
   background-image: url(../img/credit.png);
   background-repeat: no-repeat;
-  background-position: 135px 20px;
+  background-position: 151px 20px;
 }
 
 .procurement p, .garantia p, .credit p {
@@ -1046,11 +1010,13 @@ input[type=search]:hover {
 }
 
 .pre-footer {
-  width: 940px;
+  width: 960px;
   height: 537px;
   background-color: #ffffff;
   display: flex;
   justify-content: space-between;
+  padding-left: 183px;
+  padding-right: 183px;
 }
 
 .pre-footer h2 {
@@ -1079,10 +1045,7 @@ input[type=search]:hover {
 
 .breadcrumbs {
   padding: 0;
-  margin-top: 25px;
-  margin-bottom: 25px;
-  margin-left: 10px;
-  width: 940px;
+  margin: 25px 0;
 }
 
 .ferst {
@@ -1096,7 +1059,6 @@ input[type=search]:hover {
 
 .breadcrumbs li {
   display: inline-block;
-  vertical-align: top;
   padding-right: 41px;
   position: relative;
 }
@@ -1132,6 +1094,7 @@ input[type=search]:hover {
 
 .title {
   padding-top: 32px;
+  padding-left: 30px;
   padding-bottom: 34px;
   background-color: #f2f6f8;
   margin-bottom: 20px;
@@ -1298,7 +1261,7 @@ input[type=search]:hover {
 .filters h3 {
   background-color: #f7f3ec;
   color: #000000;
-  font-family: "PT Sans", "Arial", sans-serif;
+  font-family: "PT Sans";
   font-size: 13px;
   font-weight: 400;
   line-height: 18px;
@@ -1428,10 +1391,9 @@ input[type=text] {
   border-bottom-width: 0;
 }
 
-
 .sorting {
   margin-left: 20px;
-  width: 690px;
+  width: 700px;
   height: 38px;
 }
 
@@ -1472,12 +1434,12 @@ input[type=text] {
 
 .get-up {
   position: relative;
-  margin-left: 30px;
+  margin-left: 56px;
 }
 
 .get-down {
   position: relative;
-  margin-left: 30px;
+  margin-left: 41px;
 }
 
 .get-up a {
@@ -1501,10 +1463,9 @@ input[type=text] {
 .sorting a {
   opacity: 0.3;
   color: #000000;
-  font-family: "PT Sans", "Arial", sans-serif;
+  font-family: "PT Sans";
   font-size: 13px;
   font-weight: 400;
-  line-height: 18px;
 }
 
 .price-sorting a {
@@ -1513,7 +1474,6 @@ input[type=text] {
 }
 
 .catalog-list {
-  width: 690px;
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
@@ -1525,24 +1485,19 @@ input[type=text] {
 }
 
 .catalog-index .catalog-item {
-  margin-right: 20px;
+  margin-right: 22px;
 }
 
 .catalog-item {
   position: relative;
   display: inline-block;
-  vertical-align: top;
   width: 218px;
-  margin-right: 15px;
+  margin-right: 17px;
   margin-bottom: 20px;
   line-height: 20px;
   font-weight: bold;
   text-align: center;
   border: 1px solid #ccc;
-}
-
-.catalog-item:hover {
-  box-shadow: 0 10px 25px rgba(41, 52, 73, 0.5);
 }
 
 .catalog-item .new {
@@ -1584,7 +1539,7 @@ input[type=text] {
   color: white;
   font-size: 14px;
   font-weight: normal;
-  font-family: "Cuprum", "Arial", sans-serif;
+  font-family: "Cuprum", sans-serif;
   line-height: 18px;
   text-decoration: none;
   text-transform: uppercase;
@@ -1663,7 +1618,6 @@ input[type=text] {
 
 .pagination-list li {
   display: inline-block;
-  vertical-align: top;
 }
 
 .pagination-list a {
@@ -1694,7 +1648,9 @@ input[type=text] {
 
 .definition {
   margin: 0 auto;
-  width: 940px;
+  width: 960px;
+  padding-left: 130px;
+  padding-right: 130px;
 }
 
 .definition h2 {
@@ -1759,13 +1715,13 @@ input[type=text] {
   background-color: #32425c;
 }
 
-
-
 .close-footer {
-  width: 940px;
+  width: 960px;
   height: 193px;
   display: flex;
   justify-content: space-between;
+  padding-left: 130px;
+  padding-right: 130px;
 }
 
 .footer-nav-1 p {
@@ -1773,9 +1729,11 @@ input[type=text] {
 }
 
 .over-footer {
-  width: 940px;
+  width: 960px;
   display: flex;
   justify-content: space-between;
+  padding-left: 130px;
+  padding-right: 130px;
   margin: 0 auto;
 }
 
@@ -1856,7 +1814,6 @@ input[type=text] {
 
 .social li {
   display: inline-block;
-  vertical-align: top;
   position: relative;
   width: 42px;
   height: 42px;
@@ -2125,6 +2082,7 @@ input[type=text] {
   z-index: 1;
 }
 
+
 .map-close {
   border: none;
   padding: 0;
@@ -2241,12 +2199,3 @@ input[type=text] {
   display: block;
   animation: bounce 0.6s;
 }
-
-.modal-error {
-  animation: shake 0.6s;
-}
-
-.modal-error {
-  animation: shake 0.6s;
-}
-
