@@ -505,6 +505,7 @@ input[type=search]:hover {
   flex-wrap: wrap;
   margin-left: 10px;
   width: 310px;
+  justify-content: flex-end;
 }
 
 .divide-main {
@@ -602,7 +603,7 @@ input[type=search]:hover {
 }
 
 .technics {
-  width: 310px;
+  width: 300px;
   height: 123px;
   margin-right: 0;
   background-color: #dc91d8;
@@ -613,7 +614,7 @@ input[type=search]:hover {
 }
 
 .special {
-  width: 310px;
+  width: 300px;
   height: 123px;
   background-color: #8ed78f;
   margin-right: 0;
@@ -624,7 +625,7 @@ input[type=search]:hover {
 }
 
 .delivery {
-  width: 310px;
+  width: 300px;
   height: 123px;
   background-color: #ffc047;
   background-image: url("../img/delivery.svg");
