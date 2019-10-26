@@ -1,4 +1,3 @@
-$(document).ready(function() {
 var buyThis = document.querySelectorAll(".buy-this");
 var addBasket = document.querySelector(".product-add");
 var continued = document.querySelector(".close-add");
@@ -100,5 +99,4 @@ window.addEventListener("keydown", function (evt) {
       mapPopup.classList.remove("modal-show");
     }
   }
-});
 });
